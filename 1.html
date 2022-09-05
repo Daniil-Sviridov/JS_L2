@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>L2_t1</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        //пример 1
+        let a = 1, b = 1, c, d;
+        c = ++a; //с - неопределено, а = 1, а инкриментируем а, а = 2, приравниваем с = а
+        alert(c); //c = 2
+
+        //пример 2
+        d = b++; // d - неопределено, b = 1, приравниваем d = b, инкрементируем b, b = 2
+        alert(d); // d = 1
+
+        //пример 3
+        c = 2 + ++a; //  с = 2, а = 2, инкрементируем a, а = 3, складываем с = 5
+        alert(c); // 5 
+
+        //пример 4
+        d = 2 + b++; //b = 2, d =  2 + b, инкримент b, b = 3
+        alert(d); // d = 4
+
+        alert(a); // a = 3
+        alert(b); // b = 3
+    </script>
+</body>
+</html>
